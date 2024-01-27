@@ -1,1 +1,1 @@
-web: gunicorn cosycraftclub.wsgi 
+web: gunicorn cosycraftclub.wsgi
