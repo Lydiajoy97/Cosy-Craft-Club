@@ -29,8 +29,8 @@ SECRET_KEY = 'django-insecure-!wl390%ywzju#2l8%#@o(yi&w=vfma7ex=q3pg3f#l%^_nle+h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-lydiajoy97-cosycraftclu-d0ekvem0x34.ws-eu107.gitpod.io',
-'.herokuapp.com',
+
+ALLOWED_HOSTS = ['8000-lydiajoy97-cosycraftclu-d0ekvem0x34.ws-eu108.gitpod.io', '.herokuapp.com',
 ]
 
 
@@ -89,6 +89,13 @@ WSGI_APPLICATION = 'cosycraftclub.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*codeanyapp.com",
+    "https://*herokuapp.com",
+    "https://8000-lydiajoy97-cosycraftclu-d0ekvem0x34.ws-eu108.gitpod.io"
+]
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
