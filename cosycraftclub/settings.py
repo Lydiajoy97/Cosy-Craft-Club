@@ -18,6 +18,8 @@ if os.path.isfile('env.py'):
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!wl390%ywzju#2l8%#@o(yi&w=vfma7ex=q3pg3f#l%^_nle+h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True 
 
 
 ALLOWED_HOSTS = ['8000-lydiajoy97-cosycraftclu-d0ekvem0x34.ws-eu108.gitpod.io', '.herokuapp.com',
@@ -62,7 +64,7 @@ ROOT_URLCONF = 'cosycraftclub.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
