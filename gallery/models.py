@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+
 from django.template.defaultfilters import slugify
 import os
 
@@ -8,8 +9,12 @@ STATUS = ((0, "Draft"), (1, "Published"))
 # Create your models here.
 # From I think before I blog walkthrough and Youtube Video for image
 class Uploads(models.Model): 
+    def image_upload_to(self, instance=None):
+        if instance:
+            return os.path.join("media", slugify(self.slug),instance)
+
     title = models.CharField(max_length=200, unique=True, default=0)
-    image = models.ImageField(null=True, blank=True, upload_to="media/")
+    image = models.ImageField(default="", upload_to=image_upload_to)
     artist = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="art_uploads")
     description = models.TextField()
