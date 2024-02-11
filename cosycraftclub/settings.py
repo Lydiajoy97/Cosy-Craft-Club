@@ -19,6 +19,8 @@ if os.path.isfile('env.py'):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 
 
@@ -29,7 +31,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-!wl390%ywzju#2l8%#@o(yi&w=vfma7ex=q3pg3f#l%^_nle+h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['8000-lydiajoy97-cosycraftclu-d0ekvem0x34.ws-eu108.gitpod.io', '.herokuapp.com',

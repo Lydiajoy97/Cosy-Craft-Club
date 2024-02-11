@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.template.defaultfilters import slugify
+import os
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -7,7 +9,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 # From I think before I blog walkthrough and Youtube Video for image
 class Uploads(models.Model): 
     title = models.CharField(max_length=200, unique=True, default=0)
-    image = models.ImageField(null=True, blank=True, upload_to="images/")
+    image = models.ImageField(null=True, blank=True, upload_to="media/")
     artist = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="art_uploads")
     description = models.TextField()
