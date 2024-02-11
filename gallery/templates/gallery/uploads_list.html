@@ -12,7 +12,8 @@
     <h1>Art Posts</h1>
     {% for uploads in object_list %}
     <h2>{{uploads.title}}</h2>
-    <p>{{uploads.excerpt}}</p>
+    <p>{{uploads.image}}</p>
+    <p>{{uploads.description}}</p>
     <p>Author: {{uploads.author}}</p>
     {% endfor %}
 </body>
