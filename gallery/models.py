@@ -6,6 +6,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 # Create your models here.
 # From I think before I blog walkthrough and Youtube Video for image
 class Uploads(models.Model): 
+    title = models.CharField(max_length=200, unique=True)
     image = models.ImageField(null=True, blank=True, upload_to="images/")
     artist = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="art_uploads")
@@ -15,7 +16,7 @@ class Uploads(models.Model):
     class Meta:
         ordering = ["-created_on"]
     def __str__(self):
-        return f"This artwork is titled {self.title} | uploaded by {self.author}"
+        return f"This artwork is titled {self.title} | uploaded by {self.artist}"
 
 # from I think before I blog walkthrough
 class Comment(models.Model):
