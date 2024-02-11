@@ -57,6 +57,8 @@ https://medium.com/geekculture/uploading-and-managing-django-images-and-files-af
 To display images:
 https://support.hostinger.com/en/articles/1583313-how-to-fix-images-not-being-displayed-on-a-website
 
+https://www.youtube.com/watch?v=JQ5MR-09msw
+
 To reset migrations:
 https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-reset-migrations.html
 

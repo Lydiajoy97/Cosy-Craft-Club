@@ -7,7 +7,7 @@ import os
 STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
-# From I think before I blog walkthrough and Youtube Video for image
+# Youtube Video for image
 class Uploads(models.Model): 
     def image_upload_to(self, instance=None):
         if instance:
