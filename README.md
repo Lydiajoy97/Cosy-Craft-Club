@@ -2,6 +2,7 @@
 
 * [**Project Brief**](#Project-Brief)
 My project is a forum for ammature artists to display their artwork, encourage one another and share craft tips.
+
 # **TABLE OF Contents**
 
 * [**User Experience** ](#User-experienceX)
@@ -45,7 +46,11 @@ Strategy:
 Results:
 
 Other errors:
+I had not created custom models, so I had to change the fields in the models.py file after originally following the walkthrough model. To do this I first went back to my plan and re-read what fields I needed to create a custom model. The fields needed were title, image, description, author, created on and status. Now that I changed the model, I kept running into migration errors because the migration files had changed. Before attempting the migration again the terminal line pointed to typing errors in the code which I fixed.
+After researching followed the steps on (webpage) to delete the previous migration files, and then run migrations again.  To do this I typed $ find . -path "*/migrations/*.py" -not -name "__init__.py" -delete into the terminal line. This deleted all the migration files except the init__.py file. After this I was able to run migrations again and it worked. 
 
+Another issue that I ran into was displaying my images. 
+To try and resolve this I watched a tutorial video. I had to install pillow so that the imagaes could be stored somewhere. I also had to add a media root to the settings.py file. After doing both of these things it was still showing a 404 error.
 
 # Deployment 
 
