@@ -6,7 +6,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 # Create your models here.
 # From I think before I blog walkthrough and Youtube Video for image
 class Uploads(models.Model): 
-    title = models.CharField(max_length=200, unique=True)
+    title = models.CharField(max_length=200, unique=True, default=0)
     image = models.ImageField(null=True, blank=True, upload_to="images/")
     artist = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="art_uploads")
