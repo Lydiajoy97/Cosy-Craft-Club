@@ -19,8 +19,7 @@ from artwork import views
 from django.urls import path, include
 
 urlpatterns = [
-    path("", include("artwork.urls"), name="artwork-urls"),
+    path('', include("artwork.urls"), name="artwork-urls"),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-
 ]
