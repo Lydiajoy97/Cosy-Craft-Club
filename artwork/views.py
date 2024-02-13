@@ -27,5 +27,5 @@ def uploads_detail(request, slug):
     return render(
         request,
         "artwork/uploads_detail.html",
-        {"artwork": post},
+        {"post": post},
     )
