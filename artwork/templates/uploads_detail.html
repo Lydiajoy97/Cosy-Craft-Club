@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+<div class="uploads-container">
+
+<h1 class="post-title">{{ uploads.title }}</h1>
+               
+                <p class="upload-paragraph">{{ uploads.description }} | {{ uploads.author }} | {{ uploads.created_on }}</p></div>
+                    
+{% endblock %}
