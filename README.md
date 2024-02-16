@@ -42,10 +42,13 @@ As the administrator, I want to be able to log in and manage users and posts so 
 
 # Testing-and-Results 
 Strategy:
+Once my website is finished I will attempt to create an art account to test the Crud functionalities. I will also seen to my peers so that they can reveiw it and create accounts too. 
+I will be testing things such as navigation of the webpage and the gallery views during production. 
+The results of my testing is detailed below. 
 
 Results:
 
-Other errors:
+Errors in production:
 I had not created a custom model, so I had to change the fields in the modules.py file after originally following the walkthrough. To do this I first went back to my plan and re-read what fields I needed to create a custom model art forum rather than a blog. The fields needed were title, image, description, author, created on and status. Now that I changed the model, I kept running into migration errors because the migration files had changed. Before attempting the migration again the terminal line pointed to typing errors in the code which I fixed.
 After researching followed the steps on (webpage) to delete the previous migration files, and then run migrations again.  To do this I typed $ find . -path "*/migrations/*.py" -not -name "__init__.py" -delete into the terminal line. This deleted all the migration files except the init__.py file. After this I was able to run migrations again and it worked. 
 
