@@ -25,14 +25,9 @@ class Uploads(models.Model):
     def __str__(self):
         return f"This artwork is titled {self.title} | uploaded by {self.artist}"
 
-# from I think before I blog walkthrough
-class Comment(models.Model):
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="commenter")
-    body = models.TextField()
+# Artwork Rating
+class Rating(models.Model):
+
     num_stars = models.IntegerField()
     approved = models.BooleanField(default=False)
-
-    def __str__(self):
-        return f"Comment {self.body} by {self.artist}"
 
