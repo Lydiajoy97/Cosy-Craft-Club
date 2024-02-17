@@ -56,6 +56,9 @@ As well as the model fields I changed the url paths as the app names had changed
 
 Another issue that I ran into was displaying my images on the gallery page. To try and resolve this I watched a tutorial video. I had to install pillow so that the imagaes could be stored somewhere. I also had to add a media root to the settings.py file. After doing both of these things it was still showing a 404 error. I left this for a while and moved froward with the project. The course materials showed that I needed a static folder for my images to go into. After following these steps to create a static folder and moving the image files into it my webpage then displayed the images. 
 
+Another issue that I found was trying to create more template pages. I was struggling to get the pages to display and I realised that the problem was in the views.py file. To solve it I watched this video (https://www.youtube.com/watch?v=1jcjuV2StxQ), re wrote the file and it worked. 
+Whilst doing this however, I ran into merge issues. To solve this I looked at the individual merge conflicts and chose which branch I needed to keep.
+
 # Deployment 
 
 # Credits 
@@ -87,6 +90,9 @@ https://stackoverflow.com/questions/47362122/django-modulenotfounderror
 
 Other:
 https://www.youtube.com/watch?v=ygzGr51dbsY
+
+Video to add other pages:
+https://www.youtube.com/watch?v=1jcjuV2StxQ 
 
 # Acknowleadements 
 
