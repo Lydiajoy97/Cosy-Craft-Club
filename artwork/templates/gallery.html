@@ -4,13 +4,15 @@
 
 <div class =" col- 10 mt-3 left">
     <div class ="row">
-        {% for uploads in object_list %}
-        <div class="title"><h2>{{ uploads.title }}</h2></div>
-        <div class="img"><p>{{ uploads.image }}</p></div>
-        <div class= "description"><p>{{ uploads.description }}</p></div>
-        <div class="author"><p>Author: {{ uploads.author }}</p></div>
+        <div class="title"><h2>{{ Uploads.title }}</h2></div>
+        <div class="img"><p>{{ Uploads.image }}</p></div>
+        <div class= "description"><p>{{ Uploads.description }}</p></div>
+        <div class="author"><p>artists: {{ Uploads.author }}<li class="nav-item">
+            <a class="nav-link"
+            href="{% url 'artist' %}">Artists Profile</a>
+          </li></p></div>
     </div>
 </div>
 
 
-{% endblock %}
+{% endif %}

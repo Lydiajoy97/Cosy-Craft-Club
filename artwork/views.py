@@ -11,5 +11,5 @@ def gallery(request):
 def uploads_detail(request):
     return render(request, 'uploads.html')
 
-def login(reequest):
+def login(request):
     return render(request, 'login.html')
