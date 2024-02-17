@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Uploads, Rating, Bio
+from .models import Uploads, Rating
 from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Uploads)
