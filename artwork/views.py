@@ -4,12 +4,11 @@ from django.views import generic
 from .models import Uploads
 
 # Create your views here.
-class uploadsList(generic.TemplateView):
-    template_name = "index.html"
-
-def uploads_detail(request, slug):
+def Uploads(request):
+    template_name = "gallery.html"
+def gallery(request, slug):
     """
-    Display an individual :model:`artwork.uploads`.
+    Display an individual :model:`artwork.gallery`.
 
     **Context**
 
@@ -18,7 +17,7 @@ def uploads_detail(request, slug):
 
     **Template:**
 
-    :template:`artwork/uploads_detail.html`
+    :template:`artwork/gallery.html`
     """
 
     queryset = uploads.objects.filter(status=1)
@@ -26,6 +25,15 @@ def uploads_detail(request, slug):
 
     return render(
         request,
-        "artwork/uploads_detail.html",
+        "artist/gallery.html",
         {"post": post},
-    )
+        )
+
+def login(request):
+    template_name = "login.html"
+    
+    return render(
+        request,
+        "artist/login.html",
+        {"post": post},
+        )

@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_summernote',
     'artwork',
-    'artist'
+    'artist',
+    'gallery',
+    'login'
 ]
 
 MIDDLEWARE = [
