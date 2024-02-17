@@ -2,6 +2,8 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-     path('', views.uploadsList.as_view(), name='home'),
-     path('uploads_detail', views.uploads_detail, name='uploads_detail'),
+     path('', views.home, name= 'home'),
+     path('', views.gallery, name= 'gallery'),
+     path('', views.login, name='login'),
+     
 ]
