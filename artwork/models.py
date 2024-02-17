@@ -30,4 +30,3 @@ class Rating(models.Model):
 
     num_stars = models.IntegerField()
     approved = models.BooleanField(default=False)
-
