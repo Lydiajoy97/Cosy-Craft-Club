@@ -94,5 +94,31 @@ https://www.youtube.com/watch?v=ygzGr51dbsY
 Video to add other pages:
 https://www.youtube.com/watch?v=1jcjuV2StxQ 
 
+Other websites:
+
+https://hub.packtpub.com/multiple-templates-django/ 
+
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Home_page 
+
+https://www.w3schools.com/django/django_add_image.php/django_add_image_global.php
+
+https://medium.com/i18n-and-l10n-resources-for-developers/the-difference-between-and-trans-in-django-templates-e1605a710b6f
+
+https://learndjango.com/tutorials/django-login-and-logout-tutorial 
+
+https://docs.djangoproject.com/en/5.0/ref/urls/
+
+https://stackoverflow.com/questions/39935578/invalid-block-tag-endblock-did-you-forget-to-register-or-load-this-tag 
+
+https://stackoverflow.com/questions/35054230/custom-tag-not-loaded-in-template 
+
+https://medium.com/@sowaibaarshad/connecting-css-files-with-html-in-django-5dfb1d7039#:~:text=You%20can%20create%20the%20static,a%20subfolder%20if%20you%20prefer.&text=Once%20you%20have%20your%20static,to%20the%20static%20folder%20itself.
+
+for the login page:
+
+https://github.com/Code-Institute-Solutions/blog/blob/main/11_authorisation/login.html 
+
+
+
 # Acknowleadements 
 
