@@ -1,3 +1,18 @@
-.login-box {
-    background-color: aquamarine;
+body {
+    background-color:rgb(188, 224, 213);
+}
+
+h1 {
+    color: rgb(12, 36, 28);
+
+}
+
+div.login-box {
+    color: rgb(12, 36, 28);
+    border-radius: 5%;
+}
+
+div.sign-out-box {
+    color: rgb(12, 36, 28);
+    border-radius: 5%;
 }
