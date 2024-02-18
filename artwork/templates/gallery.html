@@ -1,13 +1,26 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block content %}
 
 <div class =" col- 10 mt-3 left">
     <div class ="row">
         <div class="title"><h2>{{ Uploads.title }}</h2></div>
         <div class="img"><p>{{ Uploads.image }}</p></div>
+        <div class="image-container">
+            {% if "placeholder" in post.featured_image.url %}
+            <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+              alt="placeholder image">
+            {% else %}
+            <img class="card-img-top" src=" {{ post.featured_image.url }}"
+              alt="{{ post.title }}">
+            {% endif %}
+            <div class="image-flash">
         <div class= "description"><p>{{ Uploads.description }}</p></div>
         <div class="author"><p>artists: {{ Uploads.author }}<li class="nav-item">
             <a class="nav-link"
-            href="{% url 'artist' %}">Artists Profile</a>
+            href="">Artists Profile</a>
           </li></p></div>
     </div>
 </div>
+{% endblock %}

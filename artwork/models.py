@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 from django.template.defaultfilters import slugify
 import os
@@ -15,6 +16,7 @@ class Uploads(models.Model):
 
     title = models.CharField(max_length=200, unique=True, default=0)
     image = models.ImageField(default="", upload_to=image_upload_to)
+    featured_image = CloudinaryField('image', default='placeholder')
     artist = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="art_uploads")
     description = models.TextField()
