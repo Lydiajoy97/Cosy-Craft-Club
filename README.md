@@ -114,6 +114,20 @@ https://stackoverflow.com/questions/35054230/custom-tag-not-loaded-in-template
 
 https://medium.com/@sowaibaarshad/connecting-css-files-with-html-in-django-5dfb1d7039#:~:text=You%20can%20create%20the%20static,a%20subfolder%20if%20you%20prefer.&text=Once%20you%20have%20your%20static,to%20the%20static%20folder%20itself.
 
+https://stackoverflow.com/questions/71278346/the-directory-static-in-the-staticfiles-dirs-setting-does-not-exist-visual
+
+https://www.w3schools.com/css/css_background_shorthand.asp 
+
+https://stackoverflow.com/questions/36545803/failed-to-load-css-file 
+
+https://stackoverflow.com/questions/71278346/the-directory-static-in-the-staticfiles-dirs-setting-does-not-exist-visual 
+
+https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-STATIC_URL 
+
+https://docs.allauth.org/en/latest/account/views.html#login
+
+https://docs.djangoproject.com/en/4.2/ref/models/querysets/#first 
+
 for the login page:
 
 https://github.com/Code-Institute-Solutions/blog/blob/main/11_authorisation/login.html 
