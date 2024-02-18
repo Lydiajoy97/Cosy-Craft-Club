@@ -15,6 +15,10 @@ h1 {
     color: rgb(12, 36, 28);
 }
 
+.container h3 {
+    color: rgb(12, 36, 28);
+}
+
 div.login-box {
     color: rgb(12, 36, 28);
     border-radius: 5%;
