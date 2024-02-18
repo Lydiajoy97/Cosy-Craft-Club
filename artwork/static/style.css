@@ -1,5 +1,10 @@
+
+
 .carousel-item img {
-    height: 400px;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
 body {
@@ -8,7 +13,6 @@ body {
 
 h1 {
     color: rgb(12, 36, 28);
-
 }
 
 div.login-box {
